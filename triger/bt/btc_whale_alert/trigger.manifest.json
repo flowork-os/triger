@@ -1,0 +1,33 @@
+{
+  "id": "btc_whale_alert",
+  "name": "Bitcoin Whale & Price Breakout Watcher",
+  "version": "1.0.0",
+  "type": "active",
+  "category_id": "CAT-006",
+  "category": "finance",
+  "author": "Flowork Sovereign Core",
+  "entry": "watcher.mjs",
+  "command": "node external_triger/btc_whale_alert/watcher.mjs",
+  "target": {
+    "chat_id": "session-crypto-trading",
+    "group_id": "group-risk-council",
+    "agent_id": "crypto-analyst",
+    "category_id": "CAT-006"
+  },
+  "interval_seconds": 30,
+  "env_vars": {
+    "BTC_ALERT_PRICE": "100000",
+    "FLOWORK_CORE_URL": "http://127.0.0.1:9099"
+  },
+  "keywords": [
+    "bitcoin",
+    "btc",
+    "crypto",
+    "whale",
+    "breakout"
+  ],
+  "exclude_keywords": [
+    "forex",
+    "stock_nyse"
+  ]
+}
