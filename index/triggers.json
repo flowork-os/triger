@@ -35,6 +35,41 @@
       },
       "type": "active",
       "version": "1.0.0"
+    },
+    {
+      "author": "Flowork Sovereign Core",
+      "category": "automation_admin",
+      "category_id": "CAT-014",
+      "command": "node external_triger/iot_weather_ambience/watcher.mjs",
+      "entry": "watcher.mjs",
+      "env_vars": {
+        "DARK_LUX_THRESHOLD": "50",
+        "FLOWORK_CORE_URL": "http://127.0.0.1:9099"
+      },
+      "exclude_keywords": [
+        "crypto",
+        "trading"
+      ],
+      "id": "iot_weather_ambience",
+      "interval_seconds": 60,
+      "keywords": [
+        "iot",
+        "weather",
+        "light",
+        "sensor",
+        "ambience"
+      ],
+      "name": "IoT Weather & Room Illuminance Ambience Watcher",
+      "shard": "index/io/t_/iot_weather_ambience.json",
+      "source_path": "triger/io/iot_weather_ambience",
+      "target": {
+        "agent_id": "default",
+        "category_id": "CAT-014",
+        "chat_id": "session-smart-home",
+        "group_id": "group-home-automation"
+      },
+      "type": "active",
+      "version": "1.0.0"
     }
   ],
   "version": "1.0.0"
