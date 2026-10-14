@@ -48,7 +48,10 @@ async function evaluateBtcTicker() {
       try {
         const res = await fetch(`${coreUrl}/api/prompt-dispatch`, {
           method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
+          headers: {
+            'Content-Type': 'application/json',
+            'X-Flowork-Dispatch-Key': process.env.FLOWORK_DISPATCH_KEY || 'sovereign'
+          },
           body: JSON.stringify(payload)
         });
         const data = await res.json().catch(() => ({}));
