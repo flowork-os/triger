@@ -42,9 +42,9 @@
       "name": "Bitcoin Whale & Price Breakout Watcher",
       "shard": "index/bt/c_/btc_whale_alert.json",
       "type": "active",
-      "updated_at": "2026-10-15 07:30:56"
+      "updated_at": "2026-10-15 07:31:21"
     }
   ],
   "total_items": 1,
-  "updated_at": "2026-10-15 07:30:58"
+  "updated_at": "2026-10-15 07:31:23"
 }
