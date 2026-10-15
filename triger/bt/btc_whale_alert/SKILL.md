@@ -36,7 +36,7 @@ co_authored_by: "Flowork OS <agent@floworkos.com>"
 
 > **Trigger Identity:** `btc_whale_alert`  
 > **Mode:** Active Autonomous Wakeup Dispatcher  
-> **Target Organ:** `external_triger/btc_whale_alert`  
+> **Target Organ:** `{engine_root}/external_triger/btc_whale_alert`  
 > **Co-authored-by:** Flowork OS <agent@floworkos.com>
 
 ---
@@ -51,7 +51,7 @@ The `btc_whale_alert` trigger is an active, standalone background watcher design
 ### A. Run Single-Check Mock Test
 Verify the watcher executes cleanly and evaluates thresholds with Exit Code 0:
 ```bash
-node external_triger/btc_whale_alert/watcher.mjs --check-once
+node {engine_root}/external_triger/btc_whale_alert/watcher.mjs --check-once
 ```
 
 Expected JSON Output:
@@ -67,7 +67,7 @@ Expected JSON Output:
 ### B. Daemon Execution (Background Service)
 Launch the watcher in long-running background mode:
 ```bash
-node external_triger/btc_whale_alert/watcher.mjs
+node {engine_root}/external_triger/btc_whale_alert/watcher.mjs
 ```
 
 ---
