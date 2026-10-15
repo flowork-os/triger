@@ -36,7 +36,7 @@ co_authored_by: "Flowork OS <agent@floworkos.com>"
 
 > **Trigger Identity:** `iot_weather_ambience`  
 > **Mode:** Active Autonomous Wakeup Dispatcher  
-> **Target Organ:** `external_triger/iot_weather_ambience`  
+> **Target Organ:** `{engine_root}/external_triger/iot_weather_ambience`  
 > **Co-authored-by:** Flowork OS <agent@floworkos.com>
 
 ---
@@ -51,7 +51,7 @@ The `iot_weather_ambience` trigger monitors room lighting and weather conditions
 ### A. Run Single-Check Mock Test
 Verify the watcher executes cleanly and evaluates thresholds with Exit Code 0:
 ```bash
-node external_triger/iot_weather_ambience/watcher.mjs --check-once
+node {engine_root}/external_triger/iot_weather_ambience/watcher.mjs --check-once
 ```
 
 Expected JSON Output:
@@ -67,7 +67,7 @@ Expected JSON Output:
 ### B. Daemon Execution (Background Service)
 Launch the watcher in long-running background mode:
 ```bash
-node external_triger/iot_weather_ambience/watcher.mjs
+node {engine_root}/external_triger/iot_weather_ambience/watcher.mjs
 ```
 
 ---
